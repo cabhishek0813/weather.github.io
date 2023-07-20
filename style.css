@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  line-height: 1;
+  font-weight: 300;
+}
+
+body {
+  background: linear-gradient(to right, #abcfe4, #4399d2);
+}
+.weather-section {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.container {
+  margin: 3rem;
+}
+.weather {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.weather-main-box {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.132),
+      rgba(0, 0, 0, 0.233)
+    ),
+    url(./photo_2023-07-05_19-13-09.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  padding: 5rem 3rem;
+}
+.weather-aside-box {
+  background: linear-gradient(to bottom, #2a5d84, #657e8f);
+  padding: 5rem 3rem;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.weather-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 2.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+.city-box,
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.primary-heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.secoundary-heading,
+.icon {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+.time,
+.icon-text {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.third-heading {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.fourth-heading {
+  color: #dbdbdb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+.item-list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.temperature-box,
+.humidity-box,
+.wind-box {
+  margin: 2rem 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 2px;
+  margin-bottom: 3rem;
+  outline: none;
+  color: #fff;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.icon-search {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.item-heading {
+  color: #bebebe;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.item-num {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* @media only screen and (max-width: 1100px) {
+  .primary-heading {
+    font-size: 6rem;
+  }
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+  }
+} */
+@media only screen and (max-width: 992px) {
+  .weather {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .weather-main-box {
+    height: 70vh;
+  }
+  .primary-heading {
+    font-size: 7rem;
+  }
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    column-gap: 2rem;
+  }
+  .weather-main-box {
+    height: 50vh;
+  }
+  .secoundary-heading,
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    float: right;
+  }
+  .secoundary-heading {
+    font-size: 1.5rem;
+  }
+  .primary-heading {
+    font-size: 4rem;
+  }
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+  }
+  .icon img {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .secoundary-heading,
+  .icon {
+    font-size: 1.3rem;
+  }
+  .primary-heading {
+    font-size: 2.5rem;
+  }
+  .icon-text {
+    font-size: 0.8rem;
+  }
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    column-gap: 2rem;
+  }
+  .icon img {
+    width: 5rem;
+  }
+}

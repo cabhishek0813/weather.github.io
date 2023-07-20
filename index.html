@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather - App</title>
+  </head>
+  <body>
+    <main>
+      <section class="weather-section">
+        <div class="container">
+          <div class="weather">
+            <div class="weather-main-box">
+              <span class="logo">the.weather</span>
+              <div class="weather-box">
+                <h1 class="primary-heading"></h1>
+                <div class="city-box">
+                  <h2 class="secoundary-heading"></h2>
+                  <p class="icon-text"></p>
+                </div>
+                <div class="icon-box">
+                  <div class="icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="weather-aside-box">
+              <form action="" class="weather__city">
+                <input
+                  type="text"
+                  placeholder="enter location"
+                  class="weather__search"
+                />
+                <!-- <ion-icon name="search-outline" class="icon-search"></ion-icon> -->
+              </form>
+              <h4 class="fourth-heading">weather details</h4>
+              <div class="temperature-box">
+                <h3 class="third-heading">temperature</h3>
+                <div class="item-list-box">
+                  <div class="item">
+                    <p class="item-heading">Temperature</p>
+                    <p class="item-num temperature__second">22</p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">min Temperature</p>
+                    <p class="item-num min__temp"></p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">max Temperature</p>
+                    <p class="item-num max__temp"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="humidity-box">
+                <h3 class="third-heading">humidity</h3>
+                <div class="item-list-box">
+                  <div class="item">
+                    <p class="item-heading">humidity</p>
+                    <p class="item-num humidity__one"></p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">feels like</p>
+                    <p class="item-num feels__like"></p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">wind degree</p>
+                    <p class="item-num wind__degree"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="wind-box">
+                <h3 class="third-heading">wind</h3>
+                <div class="item-list-box">
+                  <div class="item">
+                    <p class="item-heading">wind speed</p>
+                    <p class="item-num wind__speed"></p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">sunrise time</p>
+                    <p class="item-num sunrise__time"></p>
+                  </div>
+                  <div class="item">
+                    <p class="item-heading">sunset time</p>
+                    <p class="item-num sunset__time"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
